@@ -4,6 +4,7 @@ target 'MXSegmentedPager', :exclusive => true do
   pod 'MXSegmentedPager', :path => '../'
   
   pod 'M13ProgressSuite', '~> 1.2.7'
+  pod 'VGParallaxHeader' , :git => 'https://github.com/untouchable741/VGParallaxHeader.git'
   
 end
 
