@@ -61,6 +61,8 @@ typedef void (^MXProgressBlock) (CGFloat progress);
                          mode:(VGParallaxHeaderMode)mode
                        height:(CGFloat)height;
 
+- (UIScrollView *)containerScrollView;
+
 @end
 
 /**

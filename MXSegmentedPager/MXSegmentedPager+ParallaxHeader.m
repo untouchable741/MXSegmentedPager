@@ -315,6 +315,10 @@ static NSString* const kSegmentedControlPositionKeyPath = @"segmentedControlPosi
     objc_setAssociatedObject(self, @selector(changeContainerFrame), number , OBJC_ASSOCIATION_RETAIN);
 }
 
+- (UIScrollView *)containerScrollView {
+    return self.scrollView;
+}
+
 #pragma mark KVO 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
