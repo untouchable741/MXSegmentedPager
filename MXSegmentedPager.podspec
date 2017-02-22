@@ -25,6 +25,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 s.source_files = 'MXSegmentedPager/*.{m,h}'
-  s.dependency 'HMSegmentedControl', '~> 1.5.2'
   s.dependency 'PureLayout'
 end
