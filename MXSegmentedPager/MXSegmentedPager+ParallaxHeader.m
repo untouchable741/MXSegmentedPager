@@ -81,6 +81,12 @@ static NSString* const kContentOffsetKeyPath = @"contentOffset";
     if (self.progressBlock) {
         self.progressBlock(scrollView.parallaxHeader.progress);
     }
+    
+    if (self.contentOffset.y >= 0) {
+        if ([self.segmentedPager.delegate respondsToSelector:@selector(didScrollToBottomOfSegmentedPager:)]) {
+            [self.segmentedPager.delegate didScrollToBottomOfSegmentedPager:self.segmentedPager];
+        }
+    }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {

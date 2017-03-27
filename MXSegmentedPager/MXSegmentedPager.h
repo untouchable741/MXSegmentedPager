@@ -75,6 +75,8 @@ typedef NS_ENUM(NSInteger, MXSegmentedControlPosition) {
  */
 - (CGFloat) heightForSegmentedControlInSegmentedPager:(MXSegmentedPager*)segmentedPager;
 
+- (void) didScrollToBottomOfSegmentedPager:(MXSegmentedPager*)segmentedPager;
+
 @end
 
 /**
